@@ -9,12 +9,25 @@
 
   <!-- App-specific -->
   <script src="js/app.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body ng-controller="TitleListController">
-  <ul ng-repeat="title in titles">
-    <li>
-      {{title.name}} by {{title.author}}
-    </li>
-  </ul>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">TitleDB++</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles">
+        <a href="https://api.titledb.com/v0/redirect/{{title.titleid}}">{{title.name}}</a> by {{title.author}}
+        <a href="https://api.titledb.com/v0/redirect/{{title.titleid}}" class="thumbnail">
+          <img src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon">
+        </a>
+      </div>
+  </div>
+  </div>
 </body>
 </html>
