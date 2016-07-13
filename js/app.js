@@ -9,24 +9,3 @@ titledbApp.controller('TitleListController', function TitleListController($scope
     });
   });
 });
-
-function enableQrCodes(){
-  $('.qr-collapse').on('show.bs.collapse', function (event) {
-    var title = angular.element(event.target).scope().title;
-    $(event.target).qrcode({text:'http://titledb.com/api/v0/proxy/' + title.titleid});
-  });
-  $('.qr-collapse').on('hidden.bs.collapse', function (event) {
-    $(event.target).empty();
-  });
-}
-
-$('document').ready(function(){
-  $('body').on("show.bs.collapse", ".qr-collapse", function(event){
-    var title = angular.element(event.target).scope().title;
-    console.log(event);
-    $(event.target).qrcode({text:'http://titledb.com/api/v0/proxy/' + title.titleid});
-  });
-  $('body').on("hidden.bs.collapse", ".qr-collapse", function(event){
-    $(event.target).empty();
-  });
-});
