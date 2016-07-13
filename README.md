@@ -6,4 +6,4 @@ This is my first project that uses AngularJS (and also my first time using GitHu
 Here's a small todo-list:
 
 - Add proper user agent string to API requests to TitleDB
-- QR-Code output
+- ~~QR-Code output~~ wew lad
