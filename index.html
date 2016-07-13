@@ -22,9 +22,9 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles">
-        <a href="https://api.titledb.com/v0/redirect/{{title.titleid}}">{{title.name}}</a> by {{title.author}}
-        <a href="https://api.titledb.com/v0/redirect/{{title.titleid}}" class="thumbnail">
-          <img src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon">
+        <a ng-href="https://api.titledb.com/v0/redirect/{{title.titleid}}">{{title.name}}</a> by {{title.author}}
+        <a ng-href="https://api.titledb.com/v0/redirect/{{title.titleid}}" class="thumbnail">
+          <img ng-src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon">
         </a>
       </div>
   </div>
