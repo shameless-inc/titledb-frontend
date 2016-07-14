@@ -7,5 +7,9 @@ Here's a small todo-list:
 
 - Add proper user agent string to API requests to TitleDB
 - ~~QR-Code output~~ wew lad
-- Fix phone layout
+- ~~Fix phone layout~~
 - Fix behavior of cards when one card is longer than others
+- Filtering / Searching
+- Sorting
+- Polishing
+- Other views?

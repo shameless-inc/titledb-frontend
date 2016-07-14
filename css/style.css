@@ -1,0 +1,40 @@
+body {
+  padding-top: 80px;
+  background-color: #e2e2e2;
+}
+
+.btn .mdi {
+  vertical-align: middle;
+  font-size: 17px;
+  top: -1px;
+  position: relative;
+}
+
+.btn-just-icon .mdi {
+  vertical-align: middle;
+  font-size: 25px;
+  position: relative;
+}
+
+.btn.btn-just-icon i{
+  width: 100%;
+}
+
+.qr-collapse canvas {
+  width: 100%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.navbar-brand .mdi {
+  vertical-align: middle;
+  font-size: 25px;
+  top: -3px;
+  position: relative;
+}
+
+.card.title {
+  margin-bottom: 20px;
+}
