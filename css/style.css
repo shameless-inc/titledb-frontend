@@ -71,8 +71,12 @@ body {
 
 @media(max-width: 768px){
   .navbar-collapse .navbar-text-wrapper{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .navbar-collapse .btn {
+    display: inline-block;
   }
 }
 
