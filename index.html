@@ -33,8 +33,8 @@
 <body ng-controller="TitleListController">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
-      </div>
+      <a class="navbar-brand" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
+      <p class="navbar-text">A 3DS homebrew hub powered by the awesome <a class="navbar-link" href="https://titledb.com">TitleDB.com</a></p>
     </div>
   </nav>
   <div class="container">
@@ -45,7 +45,7 @@
             <img ng-src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon" class="img-responsive hb-icon">
             <h1>{{title.name}}</h1>
             <p>by {{title.author}}</p>
-            <p class="text-muted"><small>ID: {{title.titleid}}</small></p>
+            <p class="text-muted"><small>Size: {{title.size | filesize:2}} // ID: {{title.titleid}}</small></p>
             <p>{{title.description}}</p>
           </div>
           <div class="footer">

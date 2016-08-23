@@ -8,8 +8,9 @@ Here's a small todo-list:
 - Add proper user agent string to API requests to TitleDB
 - ~~QR-Code output~~ wew lad
 - ~~Fix phone layout~~
-- Fix behavior of cards when one card is longer than others
+- ~~Fix behavior of cards when one card is longer than others~~ *kinda fixed*
 - Filtering / Searching
 - Sorting
-- Polishing
-- Other views?
+- Submission of titles to TitleDB.com
+- Better QR display
+- Other views, i.e. list view?
