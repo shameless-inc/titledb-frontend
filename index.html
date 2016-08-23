@@ -73,13 +73,18 @@
             <p>{{title.description}}</p>
           </div>
           <div class="footer">
-            <a class="btn btn-success btn-simple" role="button" data-toggle="collapse" data-target="#qr-{{title.titleid}}" aria-expanded="false" aria-controls="qr-{{title.titleid}}" alt-text="Display QR code">QR-CODE</a>
-            <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple" role="button" data-toggle="tooltip" data-placement="top" alt-text="Download">DOWNLOAD</a>
-            <div class="collapse qr-collapse" id="qr-{{title.titleid}}"><div>
+            <a class="btn btn-success btn-simple" role="button" data-toggle="collapse" data-target="#qr-{{title.titleid}}" aria-expanded="false" aria-controls="qr-{{title.titleid}}">QR-CODE</a>
+            <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple" role="button" data-toggle="tooltip" data-placement="top">DOWNLOAD</a>
+            <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="container-fluid">
+      <p class="text-muted">Made by <a href="#" onclick="window.open('https://github.com/shameless-inc');">shameless-inc</a> and powered by /u/codepoet82's <a href="#" onclick="window.open('https://titledb.com');">TitleDB.com</a>.<br />All extracted graphics, logos, and trademarks are property of their respective owners.</p>
+    </div>
+  </footer>
 </body>
 </html>
