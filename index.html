@@ -33,8 +33,24 @@
 <body ng-controller="TitleListController">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
-      <p class="navbar-text">A 3DS homebrew hub powered by the awesome <a class="navbar-link" href="https://titledb.com">TitleDB.com</a></p>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="navbar-text-wrapper">
+            <p class="navbar-text">A 3DS homebrew hub powered by the awesome <a class="navbar-link" href="https://titledb.com">TitleDB.com</a></p>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
     </div>
   </nav>
   <div class="container">

@@ -68,3 +68,16 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+
+@media(max-width: 768px){
+  .navbar-collapse .navbar-text-wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  margin-right: 0;
+}
