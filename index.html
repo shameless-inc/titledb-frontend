@@ -15,8 +15,10 @@
   <script src="js/material-kit.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/nouislider.min.js"></script>
+  <script type='text/javascript' src='js/loading-bar.min.js'></script>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/material-kit.css" />
+  <link rel='stylesheet' href='css/loading-bar.min.css' type='text/css' media='all' />
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.6.50/css/materialdesignicons.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -59,6 +61,7 @@
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
+      <div id="loading-bar-container"></div>
     </div>
   </nav>
   <div class="container">
@@ -72,17 +75,17 @@
               </div>
               <div class="media-body">
                 <div class="media-heading">
-                  <span class="title-name text-primary text-uppercase">{{title.name}}</span>
+                  <span class="title-name text-primary text-uppercase" title="{{title.name}}">{{title.name}}</span>
                 </div>
-                <small>by {{title.author}}</small>
+                <small title="by {{title.author}}">by {{title.author}}</small>
               </div>
             </div>
             <br />
-            <p class="truncate">{{title.description}}</p>
+            <p class="truncate" title="{{title.description}}">{{title.description}}</p>
             <p class="text-muted">
-              <span><small>Size: {{title.size | filesize:2}}</small></span>
+              <small>Size: {{title.size | filesize:2}}</small>
               <br />
-              <span><small class="truncate">ID: {{title.titleid}}</small></span>
+              <small>ID: {{title.titleid}}</small>
             </p>
           </div>
           <div class="footer">

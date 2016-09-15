@@ -93,3 +93,16 @@ body {
   margin-left: 15px;
   margin-right: 0;
 }
+
+#loading-bar .bar {
+  position: relative;;
+  width: 100%;
+  background: white;
+}
+
+#loading-bar-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

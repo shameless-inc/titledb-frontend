@@ -1,5 +1,9 @@
 (function($){
-  var titledbApp = angular.module('titledbApp', []);
+  var titledbApp = angular.module('titledbApp', ['angular-loading-bar'])
+  .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+    cfpLoadingBarProvider.parentSelector = '#loading-bar-container';
+  }]);
 
   titledbApp.controller('TitleListController', function TitleListController($scope, $http) {
     $http.get('https://api.titledb.com/v0').then(function(response){
