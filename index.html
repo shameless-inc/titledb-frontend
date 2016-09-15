@@ -85,11 +85,11 @@
               <br />
               <small>ID: {{title.titleid}}</small>
             </p>
+            <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
           </div>
           <div class="footer">
             <a class="btn btn-success btn-simple" role="button" data-toggle="collapse" data-target="#qr-{{title.titleid}}" aria-expanded="false" aria-controls="qr-{{title.titleid}}">QR-CODE</a>
             <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple" role="button" data-toggle="tooltip" data-placement="top">DOWNLOAD</a>
-            <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
           </div>
         </div>
       </div>

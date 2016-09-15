@@ -12,5 +12,6 @@ Here's a small todo-list:
 - Filtering / Searching
 - Sorting
 - Submission of titles to TitleDB.com
-- Better QR display
+- ~~Better QR display~~
+- Better QR animation
 - Other views, i.e. list view?
