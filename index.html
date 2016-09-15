@@ -66,11 +66,24 @@
       <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles">
         <div class="card title">
           <div class="content">
-            <img ng-src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon" class="img-responsive hb-icon">
-            <h1>{{title.name}}</h1>
-            <p>by {{title.author}}</p>
-            <p class="text-muted"><small>Size: {{title.size | filesize:2}} // ID: {{title.titleid}}</small></p>
-            <p>{{title.description}}</p>
+            <div class="media">
+              <div class="media-left">
+                <img ng-src="https://api.titledb.com/images/{{title.titleid}}.png" alt="{{title.name}}-icon" class="media-object hb-icon pull-left">
+              </div>
+              <div class="media-body">
+                <div class="media-heading">
+                  <span class="title-name text-primary text-uppercase">{{title.name}}</span>
+                </div>
+                <small>by {{title.author}}</small>
+              </div>
+            </div>
+            <br />
+            <p class="truncate">{{title.description}}</p>
+            <p class="text-muted">
+              <span><small>Size: {{title.size | filesize:2}}</small></span>
+              <br />
+              <span><small class="truncate">ID: {{title.titleid}}</small></span>
+            </p>
           </div>
           <div class="footer">
             <a class="btn btn-success btn-simple" role="button" data-toggle="collapse" data-target="#qr-{{title.titleid}}" aria-expanded="false" aria-controls="qr-{{title.titleid}}">QR-CODE</a>

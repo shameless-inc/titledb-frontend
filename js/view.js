@@ -11,7 +11,7 @@ $('document').ready(function(){
 
   $(document).arrive(".title", function() {
       var $newElem = $(this);
-      $($newElem).children('.content').children('h1, p').truncate();
+      $($newElem).children('.content').children('.truncate').truncate();
       //$($newElem).children().children('[data-toggle="tooltip"]').tooltip(); TODO: Fix tootltips
   });
 });

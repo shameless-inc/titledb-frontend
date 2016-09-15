@@ -4,6 +4,14 @@ body {
   font-family: 'Roboto', 'sans-serif';
 }
 
+.text-primary {
+  color: blue;
+}
+
+.title-name {
+  font-weight: 500;
+}
+
 .btn .mdi {
   vertical-align: middle;
   font-size: 17px;
