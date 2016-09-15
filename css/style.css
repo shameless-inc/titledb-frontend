@@ -12,6 +12,13 @@ body {
   font-weight: 500;
 }
 
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .btn .mdi {
   vertical-align: middle;
   font-size: 17px;
@@ -93,6 +100,8 @@ body {
   margin-left: 15px;
   margin-right: 0;
 }
+
+/* Loading bar tweaks */
 
 #loading-bar .bar {
   position: relative;;

@@ -11,7 +11,12 @@ $('document').ready(function(){
 
   $(document).arrive(".title", function() {
       var $newElem = $(this);
-      $($newElem).children('.content').children('.truncate').truncate();
+      /*setTimeout(function(){
+        //$($newElem).children('.content').children('.truncate').truncate();
+        $($newElem).children('.content').children('.truncate').dotdotdot({
+          watch: 'window'
+        });
+      }, 10);*/
       //$($newElem).children().children('[data-toggle="tooltip"]').tooltip(); TODO: Fix tootltips
   });
 });
