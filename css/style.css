@@ -19,6 +19,14 @@ body {
   text-overflow: ellipsis;
 }
 
+.navbar .mdi {
+  color: #FFFFFF;
+}
+
+.input-group-addon .mdi {
+  font-size: 1.2em;
+}
+
 .btn .mdi {
   vertical-align: middle;
   font-size: 17px;
@@ -34,6 +42,17 @@ body {
 
 .btn.btn-just-icon i{
   width: 100%;
+}
+
+.search-form {
+  margin: 0 !important;
+  border: none;
+  padding: 5px;
+}
+
+.search-form .input-group {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .qr-collapse {

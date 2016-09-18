@@ -9,7 +9,7 @@ Here's a small todo-list:
 - ~~QR-Code output~~ wew lad
 - ~~Fix phone layout~~
 - ~~Fix behavior of cards when one card is longer than others~~ *kinda fixed*
-- **Filtering / Searching**
+- ~~Filtering / Searching~~
 - Display title count
 - Display a "last update" date as soon as the API provides it
 - Sorting

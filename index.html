@@ -34,19 +34,28 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
-        <a class="navbar-brand" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
+        <a class="navbar-brand hidden-xs" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</a>
+        <form class="search-form navbar-right navbar-form" role="search">
+          <div class="input-group">
+            <input type="text" id="search-input" class="form-control" placeholder="Search" ng-model="searchQuery" />
+            <span class="input-group-addon">
+              <label for="search-input" class="mdi mdi-magnify"></label>
+            </span>
+          </div>
+        </form>
       </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-left">
           <li class="navbar-text-wrapper">
+            <h4 class="visible-xs" href="#"><i class="mdi mdi-gamepad"></i>&nbsp;TitleDB++</h4>
+          </li>
+          <li class="navbar-text-wrapper hidden-sm">
             <p class="navbar-text">A 3DS homebrew hub powered by the awesome <a class="navbar-link" href="https://titledb.com">TitleDB.com</a></p>
           </li>
         </ul>
@@ -64,7 +73,7 @@
   </nav>
   <div class="container">
     <div class="row" id="titles">
-      <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles">
+      <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles | filter : searchQuery">
         <div class="card title">
           <div class="content">
             <div class="media">
