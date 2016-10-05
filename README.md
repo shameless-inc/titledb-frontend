@@ -17,6 +17,7 @@ Here's a small todo-list:
 - ~~Better QR display~~
 - Better QR animation
 - Other views, i.e. list view?
+- Fix the ripple effects
 
 Also planned:
 - Display the source (show where TitleDB sources the CIA from, i.e. GitHub, Dropbox)
